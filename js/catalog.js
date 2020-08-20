@@ -43,6 +43,7 @@ function addSelectedItemToCart() {
   console.log(selectElementTwo);
   var selectedItemTwo = selectElementTwo.valueAsNumber;
   
+  cart.addItem(selectedItem, selectedItemTwo);
 
   // TODO: suss out the item picked from the select list
   // TODO: get the quantity
