@@ -3,12 +3,13 @@
 // Cart constructor.
 var Cart = function(items) {
   // this.items is an array of CartItem instances.
-  this.items = items;
+  this.items = items;  
 };
 
 Cart.prototype.addItem = function(product, quantity) {
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
-    for (i = 0; i < productArray.length; i++);
+   var newItem = new CartItem(product, quantity);
+   this.items.push(newItem);
 };
 
 Cart.prototype.saveToLocalStorage = function() {
@@ -25,7 +26,7 @@ var CartItem = function(product, quantity) {
   this.quantity = quantity;
   cartItemArray.push(this);
 };
-// cartItemArray = [];
+cartItemArray = [];
 
 // Product contructor.
 function Product(filePath, name){
